@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MVVM</title>
+    <!-- Vue的js文件引入到html文件中来 -->
+	<script src="js/vue-2.4.0.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <!-- V 视图 -->
+    <div id="app">
+        <h1 v-cloak>{{info}}</h1>
+    </div>
+</body>
+<script type="text/javascript">
+    /* 实例化vue */
+    /* vm = 调度者 */
+    var vm = new Vue({
+        // el:=element vue需要操作的标签是哪一个
+        el: "#app",
+        // data 数据--- M
+        data:{
+            info: "hello"
+        }
+    });
+</script>
+</html>
